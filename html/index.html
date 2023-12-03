@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <div class="container-main">
+        <i class="fa-solid fa-bars drop" onclick="myfunction()"></i>
+        <div class="nav-bar">
+            <div class="heading">
+                <h1>Espace client</h1>
+            </div>
+            <div class="nav-items" id="dropdown-content">
+                <div class="close" onclick="closeMenu()">
+                    <h1>X</h1>
+                </div>
+                <ul>
+                    <li>Centre d'aide</li>
+                    <li>Assistance</li>
+                    <li>peps</li>
+                    <li>Premiers pas</li>
+                    <li><i class="fa-solid fa-magnifying-glass icon"></i></li>
+                </ul>
+            </div>
+            <div class="logo">
+                <img src="/imges/logo.png" alt="">
+            </div>
+            <div class="btn">
+                <button>Connexion</button>
+            </div>
+        </div>
+        <div class="border-1"></div>
+
+        <div class="Accueil">
+            <span>Accueil</span>
+        </div>
+        <div class="title">
+            <h1>Se connecter</h1>
+        </div>
+        <div class="connecter">
+            <span class="border-2">Se connecter</span>
+            <span class="mar-left">Créer un nouveau compte</span>
+            <span class="mar-left">Réinitialiser votre mot de passe</span>
+            <div class="border-bottom"></div>
+        </div>
+        <div class="frm">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">
+                        Saisissez votre email <span>*</span></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        required>
+                    <div id="emailHelp" class="form-text">Vous pouvez utiliser votre nom d'utilisateur ou votre email
+                        pour vous connecter.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Mot de passe <span>*</span></label>
+                    <input type="password" class="form-control" id="myPassword" name="password" required> <i
+                        class="fa-regular fa-eye eyes" onmouseover="mouseoverPass();" onmouseout="mouseoutPass();"></i>
+                    <div id="emailHelp" class="form-text">Saisissez le mot de passe correspondant à votre nom
+                        d'utilisateur.
+                    </div>
+                </div>
+
+                <div class="btn2">
+                    <button>Se connecter</button>
+                    <button>Réinitialiser votre mot de passe</button>
+                </div>
+        </div>
+
+        </form>
+        <div class="footer">
+            <div class="footer-1">
+                <span>
+                    Copyright AGIRIS 2021 -
+                </span>
+                <span>
+                    Mentions légales -
+                </span>
+                <span>FAQ -</span>
+                <span>Nous contacter -</span>
+                <span>
+                    Enregistrer mon logiciel -
+                </span>
+                <span>Recommandations techniques -</span>
+                <span>
+                    Prise en main à distance
+                    -</span>
+                <span>
+                    Le blog
+                </span>
+            </div>
+            <div class="footer-items">
+                <span>Copyright AGIRIS 2021 -</span>
+                <span> Confidentialité -</span>
+                <span> CNIL</span>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <div class="footer-end">
+                        <span>Accès collaborateurs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+        integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/script.js"></script>
+    <script>
+        function mouseoverPass() {
+            let obj = document.getElementById('myPassword');
+            obj.type = 'text';
+        }
+        function mouseoutPass() {
+            let obj = document.getElementById('myPassword');
+            obj.type = 'password';
+        }
+    </script>
+</body>
+
+</html>
